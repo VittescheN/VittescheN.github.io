@@ -1,85 +1,271 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="homepageStyle.css">
+
+<style>
+/* +++++++++++++++++++++++++++++++++++++++++++++++ */
+/*	#navbar1 ul li{
+		float:left;
+	}
+
+	#navbar1 ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: auto;
+	}
+
+	#navbar1 a:link, a:visited{
+		display: block;
+		font-weight: bold;
+		color: #FFFFFF;
+		background-color: #990000;
+		width: 120px;
+		margin-left: 225px;
+		text-decoration: none;
+	}
+
+	#navbar1 a:hover{
+		background-image: url("./sidenav.png");
+	}
+
+	.current {
+		background-image: url("./sidenav.png");
+	}
+
+	#navbar1{
+		border-image-repeat: no-repeat;
+		text-align: center;
+		margin: 0;
+		padding: 10px;
+		border-style: hidden;
+		background-color: #990000;
+	}
+
+	#navbar1 select{
+		box-shadow: 0px 8px 16px 0px;
+	} */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+	#logoBg img{
+		margin-left: -13px;
+		margin-top: -10px;
+			}
+
+	body{
+		margin: 0;
+		padding: 0;
+		background-image: url("./PHC bg.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	.container{
+		margin: auto;
+		height: auto;
+		width: 80%;
+		border: solid;
+		border-color: rgb(0,0,0,0.7);
+		margin-bottom: 70px;
+		padding: 10px;
+		overflow: auto;
+		border-radius: 100px;
+		box-shadow: 5px 10px rgb(0,0,0, 0.5);
+		background: rgb(255,255,255, 0.3);
+	}
+
+	.content1{
+		margin: auto;
+		margin-left: 50px;
+		margin-top: 40px;
+		float: left;
+		height: 263px;
+		width: 40%;
+		border:solid;
+		overflow: auto;
+		padding: 15px;
+		border-radius: 20px;
+		margin-bottom: 30px;
+		box-shadow: 5px 10px rgb(0,0,0,0.6);
+	}
+
+	.content1 h3{
+		background-image: url("./sidenav.png");
+		background-repeat: no-repeat;
+		width: auto;
+	}
+
+	.content1 p{
+		color: black;
+		font-size: 18px;
+	}
+
+	.contents ul{
+		height: 263px;
+		width: 30%;
+		margin: auto;
+		margin-left: 50px;
+		margin-top: 400px;
+		border:solid;
+		overflow: auto;
+		padding: 15px;
+		border-radius: 20px;
+	}
+
+	.logInBox {
+		margin-top: -50px;
+		background: rgb(0,0,0, 0.5);
+		color: #fff;
+		width: 320px;
+		height: 420px;
+		top: 50%
+		left 50%;
+		position: absolute;
+		border: solid;
+		transform: translate(190%, -8%);
+		box-sizing: border-box;
+		border-radius: 30px;
+		padding: 0px 0px;
+	}
+	.loginTxt{
+		margin-top: -15px;
+		color: rgb(237, 81, 81);
+	}
+	.logInAvatar{
+
+	}
+
+	.logInBox input[type="text"], input[type="password"]{
+		border: none;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		outline:none;
+		height: 40px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	.logInBox input[type="submit"]{
+		border: none;
+		outline: none;
+		height: 35px;
+		width: 100px;
+		background: rgb(237, 81, 81);
+		color: #fff;
+		font-size: 18px;
+		border-radius: 20px;
+	}
+
+	.logInBox input[type="submit"]:hover{
+		cursor: pointer;
+		background: tomato;
+		color: #000;
+	}
+
+	.labelMargin{
+		margin-left: -123px;
+	}
+
+	.paa footer{
+		margin: auto;
+		height: 100px;
+		border-bottom: 15px inset blue;
+		border-top: 15px outset maroon;
+		border-top-right-radius:  150px;
+		border-bottom: 40px ridge maroon;
+		border-top-left-radius: 150px;
+		box-shadow: 10px 10px 30px black;
+		background: rgb(255,255,255,0.3);
+		margin-top: -40px;
+	}
+
+	.paa ul{
+		list-style: none;
+	}
+	.paa a{
+		color: blue;
+	}
+	.paa a:hover{
+		background-color: tomato;
+	}
+
+	.paaParagraph{
+		margin-top: -10px;
+	}
+</style>
+
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Home Page</title>
 </head>
 <body>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!--<div id="navbar1">
+<ul>
+	<li><a class="current" href="Home.html" >HOME</a></li>
+	<li><a href="Profile.html" >PROFILE</a>
+</li>
+	<li><a href="#LogIn">LOG IN</a></li>
+</ul>
+</div> -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-<!--<div style="background-color:#ddd;padding:15px;text-align:center;">
-  <h1>Logo Here</h1>
-</div>-->
 
-<div class="logo">
-	
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<div id="logoBg">
+	<img src="logo.png" width="101%">
 </div>
 
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">Exercises</a>
-  <a href="#contact">Log Out</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+	<div class="container">
+		<div class="content1"> <h3 style="color: white;">Web Page Content 1 Here</h3>
+			<p>bla bla bla bla background-colorbla bla bla bla blabla bla bla bla bla
+			bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla
+		bla bla bla bla blabla bla bla bla blabla bla bla bla bla</p>
+
+			
+		</div>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<div class="logInBox">
+	<center><img src="./health.png" class="logInAvatar"></center>
+	<center><h1 class="loginTxt">Login Here</h1></center><br>
+	<form>
+	<center><label for="user" class="labelMargin">Username:</label></center>
+	<center><input type="text" name="" id="user" placeholder="Enter Username"></center><br>
+	<center><label for="pass" class="labelMargin">Password:</label></center>
+	<center><input type="Password" name="" id="pass" placeholder="Enter Password"></center> <br>
+	<center><input type="submit" name="" value="LogIn">
+	</form></center>
 </div>
 
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
-
-
-<div class="ProfileContainer1">
-	<h3>Welcome!</h3>
-	<div class="ProfileContents1">
-		<div class="ProfileImage1"></div>
-			<h4>User Name Here</h4>	
+	<div class="content1" style="border:none; box-shadow: none;">
 	</div>
 
-<br><br>
-
-
-	<div class="ProfileContainer2">
-	<h3>Assigned By:</h3>
-	<div class="ProfileContents2">
-		<div class="ProfileImage2"></div>
-			<h4>Therapist Name Here</h4>	
-	</div>
-</div>
-
-</div>
-
-
-
-<div class="AnnouncementContainer">
-	<h2>Announcements!</h2>
-	<div class="AnnouncementContents">
-		<p>blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla </p>
+	<div class="content1" style="float: right; margin-right: 30px;"><h3 style="color: white;">Web Page Content 2 Here</h3>
+			<p>bla bla bla bla background-colorbla bla bla bla blabla bla bla bla bla
+			bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla
+		bla bla bla bla blabla bla bla bla blabla bla bla bla bla</p>
 	</div>
 
-	
-</div><!--END OF ANNOUNCEMENTCONTAINER -->
-
-
-
-<div class="SchedContainer">
-	<h2>Physiatrists Schedule:</h2>
-	<div class="SchedContents">
-		blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla 
+	<div class="content1"><h3 style="color: white;">Web Page Content 3 Here</h3>
+			<p>bla bla bla bla background-colorbla bla bla bla blabla bla bla bla bla
+			bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla
+		bla bla bla bla blabla bla bla bla blabla bla bla bla bla</p>
 	</div>
-	
-</div>
 
 
-<footer><center>©2018, All Rights Reserved!</center></footer>
+	</div>
+
+	<div class="paa">
+		<footer>
+			<center><p>
+				<ul>
+					<li><a href="https://www.phc.gov.ph/">OFFICIAL WEBSITE</a></li>
+					<li><a href="https://www.facebook.com/Philippine-Heart-Center-Cardiac-Rehabilitation-Section-203240623184039/">FACEBOOK</a></li>
+					<li><a href="">INSTAGRAM</a></li>
+				</ul>
+				<p class="paaParagraph">©2018 Online Physical Theraphy Home Exercise Management System for PMRD. All rights reserved</p>
+			</p></center><br>
+			
+		</footer>
+	</div>
 </body>
 </html>
